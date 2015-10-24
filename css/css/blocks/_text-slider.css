@@ -1,0 +1,4 @@
+.TextSlider .TextSlider-texto, .TextSlider .TextSlider-slider {
+  width: 50%;
+  display: inline-block;
+}

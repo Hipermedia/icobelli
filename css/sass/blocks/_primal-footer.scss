@@ -1,0 +1,60 @@
+.PrimalFooter {
+	background: $footer-bg;
+
+	.PrimalFooter-contenido {
+		padding: 1rem 0;
+		@media (max-width: $tablet-width) {
+			padding: 0 1rem;
+		}
+
+		.PrimalFooter-contenedor {
+			width: 50%;
+			float: left;
+			padding: .8rem .5rem;
+			@media (max-width: $tablet-width) {
+				width: 100% !important;
+			}
+
+			&:nth-child(2n+1) {
+				width: 25%;
+			}
+
+			.PrimalFooter-contenedorTitulo {
+				margin: 0;
+				padding-bottom: 1rem;
+			}
+
+			.PrimalFooter-contenedorDatos, .PrimalFooter-contenedorComplementos {
+				float: left;
+				/*padding: 1rem;*/
+				@media (max-width: $tablet-width) {
+					width: 100% !important;
+					float: none;
+				}
+			}
+			
+			.PrimalFooter-contenedorDatos {
+				width: 45%;
+			}
+
+			.PrimalFooter-contenedorComplementos {
+				width: 55%;
+
+				.PrimalFooter-contenedorComplementos-newsletter {
+
+					.PrimalFooter-contenedorComplementos-newsletterCorreo {
+						display: inline-block;
+						vertical-align: middle;
+						width: 70%;
+					}
+
+					.PrimalFooter-contenedorComplementos-newsletterBoton {
+						display: inline-block;
+						vertical-align: middle;
+						width: 28.5%;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,90 @@
+/*------------------------------------------------*/
+/*------------------[BLOCKS]----------------------*/
+/*------------------------------------------------*/
+
+.StarchiQuote {
+	background-size: 100% 100%;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	position: relative;
+	opacity: .8;
+	/*height: 35vh;*/
+	margin: 3rem auto;
+	padding: 0;
+	@media (max-width: $tablet-width) {
+		background-size: auto auto;
+		background-attachment: local; 
+	}
+
+	.StarchiQuote-contenido {
+		@include transicion();
+
+		&:hover {
+			background: rgba(0,0,0,0.5);
+		}
+
+		@media (max-width: $desktop-width) {
+			padding: 1.5rem;
+		}
+		@media (max-width: $tablet-width) {
+			padding: 0;
+		}
+
+		.StarchiQuote-texto {
+			text-align: center;
+			padding: 2rem 0;
+			@media (max-width: $tablet-width) {
+				padding: 1rem 0;
+			}
+
+			.StarchiQuote-textoCita {
+				margin: 0;
+				text-shadow: 1px 1px black;
+				font-style: italic;
+				color: white;
+				font-size: 3rem;
+				padding: .5rem 0;
+				@media (max-width: $smaller-width) {
+					font-size: 1.8rem;
+					margin-top: 5%;
+				}
+			}
+
+			.StarchiQuote-textoDescripcion {
+				padding: .5rem 0;
+				margin: 0 !important;
+				font-size: 1.5rem;
+				color: white;
+				text-shadow: 1px 1px black;
+				margin-bottom: 1rem;
+			}
+
+			.StarchiQuote-textoBoton {
+				background: $main-color;
+				padding: .5rem 1rem;
+				border-radius: 10px;
+				color: white;
+				display: block;
+				margin: .5rem auto 0;
+				width: 20%;
+				@media (max-width: $tablet-width) {
+					width: 50%;
+				}
+			}
+		}
+
+		.StarchiQuote-textoIcono {
+			text-align: center;
+			font-size: 11rem;
+			color: white;
+			opacity: .3;
+			font-style: italic;
+			position: absolute;
+			left: 0;
+			right: 0;
+			z-index: -1;
+			top: 10%;
+		}
+	}
+}
