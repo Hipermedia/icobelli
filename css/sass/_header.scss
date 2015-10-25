@@ -9,16 +9,7 @@
 	display: inline-block;
 	height: auto; //$header-height;
 
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#39b54a+0,39b54a+100&amp;1+0,0.25+100 */
-	background: -moz-linear-gradient(top,  rgba(57,181,74,1) 0%, rgba(57,181,74,0.25) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(57,181,74,1)), color-stop(100%,rgba(57,181,74,0.25))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  rgba(57,181,74,1) 0%,rgba(57,181,74,0.25) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  rgba(57,181,74,1) 0%,rgba(57,181,74,0.25) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  rgba(57,181,74,1) 0%,rgba(57,181,74,0.25) 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  rgba(57,181,74,1) 0%,rgba(57,181,74,0.25) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#39b54a', endColorstr='#4039b54a',GradientType=0 ); /* IE6-9 */
-
-	/*background: none;*/
+	background: $header-bg;
 	margin: 0 auto;
 	z-index: 100;
 	position: fixed; // Cambiar de relative a fixed si se quiere integrar el heade ral contenido
@@ -40,15 +31,6 @@
 
 	&--tiny {
 		height: 75px;
-		
-		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#39b54a+0,39b54a+100&amp;1+0,0.25+100 */
-		background: -moz-linear-gradient(top,  rgba(57,181,74,1) 0%, rgba(57,181,74,0.25) 100%); /* FF3.6+ */
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(57,181,74,1)), color-stop(100%,rgba(57,181,74,0.25))); /* Chrome,Safari4+ */
-		background: -webkit-linear-gradient(top,  rgba(57,181,74,1) 0%,rgba(57,181,74,0.25) 100%); /* Chrome10+,Safari5.1+ */
-		background: -o-linear-gradient(top,  rgba(57,181,74,1) 0%,rgba(57,181,74,0.25) 100%); /* Opera 11.10+ */
-		background: -ms-linear-gradient(top,  rgba(57,181,74,1) 0%,rgba(57,181,74,0.25) 100%); /* IE10+ */
-		background: linear-gradient(to bottom,  rgba(57,181,74,1) 0%,rgba(57,181,74,0.25) 100%); /* W3C */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#39b54a', endColorstr='#4039b54a',GradientType=0 ); /* IE6-9 */
 
 		@media (max-width: $tablet-width) {
 			height: auto;
@@ -58,7 +40,7 @@
 	&:hover {
 
 		.Header-contenidoBefore {
-
+			
 			&.tiny {
 				height: auto;
 			}
@@ -66,7 +48,8 @@
 	}
 
 	.Header-contenidoBefore {
-		/*background: $header-bg;*/
+		background: $main-color-dark;
+
 		overflow: hidden;
 		@include transicion();
 

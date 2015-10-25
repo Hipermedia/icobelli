@@ -36,6 +36,9 @@
  ================================================== --> 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!-- Web Font
+  ================================================== -->
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <!-- CSS
   ================================================== -->
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
@@ -71,8 +74,8 @@
             <!-- <a href="">Registro</a> -->
             <!-- <a href="">Ingresar</a> -->
         </div>
-
     </div>
+    
     <section id="Header-contenido" class="Header-contenido">
         
         <!-- Logo -->

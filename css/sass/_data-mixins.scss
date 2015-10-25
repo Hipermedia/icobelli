@@ -4,27 +4,27 @@
 
 /* Fuentes
 ------------*/
-$global-font: "Open Sans";
-$main-font: "Open Sans";
+$global-font: sans-serif, Arial, Hervetica;
+$main-font: 'Montserrat', sans-serif;
 $support-font: "Open Sans";
 
 
 /* Colores
 ------------*/
-$body-bg: 				#efefef;
-$header-bg: 			#31A142;
+$body-bg: 				#edf5fa;
+$header-bg: 			#39b54a;
 $footer-bg: 			#31A142;
 
-$link-color: 			#0054A8;
+$link-color: 			#39b54a;
 $link-hover-color: 		#2B7CCE;
 $text-color:   			#212121;	// color de texto base, principalmete usado en parrafos
 $support-text-color: 	#727272;
 
-$main-color:        	#39B54A;	// color principal de la marca verde normal
-$main-color-dark:   	#31A142;	// verde oscuro
-$main-color-light:  	#8FC749;	// verde claro
+$main-color:        	#39b54a;	// color principal de la marca verde normal
+$main-color-dark:   	#31a142;	// verde oscuro
+$main-color-light:  	#8fc749;	// verde claro
 
-$sub-color-first:		#6C2B7C;	//morado
+$sub-color-first:		#f3b917;	//morado
 $sub-color-first-light:	#834E8C;	//morado claro
 
 $sub-color-second:		#EF9E1F;	//amarillo
@@ -50,7 +50,7 @@ $nav-bg-text-color-active:	none;
 /* Tamaños
 ------------*/
 $header-height: 120px;
-$desktop-width: 1000px;
+$desktop-width: 1200px;
 $tablet-width: 880px;
 $smaller-width: 560px;
 
